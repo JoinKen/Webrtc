@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      video {
+        background-color: #ddd;
+        border-radius: 7px;
+        margin: 10px 0px 0px 10px;
+        width: 320px;
+        height: 240px;
+      }
+      button {
+        margin: 5px 0px 0px 10px !important;
+        width: 654px;
+      }
+    </style>
+
+  </head>
+  <body onload="showMyFace()">
+    <video id="yourVideo" autoplay muted></video>
+    <video id="friendsVideo" autoplay></video>
+    <br />
+    <button
+      onclick="showFriendsFace()"
+      type="button"
+      class="btn btn-primary btn-lg"
+    >
+      <span
+        class="glyphicon glyphicon-facetime-video"
+        aria-hidden="true"
+      ></span>
+      Call
+    </button>
+  </body>
+  <script src="./main.js"></script>
+</html>
